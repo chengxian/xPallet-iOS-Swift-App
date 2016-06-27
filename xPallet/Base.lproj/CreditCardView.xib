@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CreditCardView" customModule="xPallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa_logo" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-3a-rgX">
+                    <rect key="frame" x="238" y="16" width="66" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="AYe-3a-rgX" secondAttribute="height" multiplier="106:35" id="Bl3-r2-Xcd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05/17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgs-Wl-Yev">
+                    <rect key="frame" x="43" y="132" width="54" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD NO." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LC-r4-w80">
+                    <rect key="frame" x="43" y="60" width="66" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.72379117398648651" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0837  5423  9087  5235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4J-Qj-juu">
+                    <rect key="frame" x="43" y="77" width="235" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPIRES END" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w67-Kw-IHQ">
+                    <rect key="frame" x="43" y="115" width="89" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.71999999999999997" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="K4J-Qj-juu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2wh-0t-VIi"/>
+                <constraint firstItem="K4J-Qj-juu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3wS-fO-aGI"/>
+                <constraint firstItem="Vgs-Wl-Yev" firstAttribute="leading" secondItem="3LC-r4-w80" secondAttribute="leading" id="7iY-p9-ZcG"/>
+                <constraint firstItem="K4J-Qj-juu" firstAttribute="leading" secondItem="3LC-r4-w80" secondAttribute="leading" id="DCS-Uk-41y"/>
+                <constraint firstItem="AYe-3a-rgX" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.12" id="HU5-i1-07p"/>
+                <constraint firstItem="K4J-Qj-juu" firstAttribute="top" secondItem="3LC-r4-w80" secondAttribute="bottom" id="PPL-4Y-rc2"/>
+                <constraint firstItem="AYe-3a-rgX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="a3G-LR-bBh"/>
+                <constraint firstItem="Vgs-Wl-Yev" firstAttribute="top" secondItem="w67-Kw-IHQ" secondAttribute="bottom" id="jXb-8e-bcN"/>
+                <constraint firstItem="w67-Kw-IHQ" firstAttribute="top" secondItem="K4J-Qj-juu" secondAttribute="bottom" constant="12" id="jvv-OE-XoP"/>
+                <constraint firstAttribute="trailing" secondItem="AYe-3a-rgX" secondAttribute="trailing" constant="16" id="km8-gI-7dB"/>
+                <constraint firstItem="w67-Kw-IHQ" firstAttribute="leading" secondItem="3LC-r4-w80" secondAttribute="leading" id="ufw-wm-N5p"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardExpireEndDate" destination="Vgs-Wl-Yev" id="vWM-95-X3w"/>
+                <outlet property="cardNumber" destination="K4J-Qj-juu" id="i08-jy-96A"/>
+                <outlet property="imgVisaLogo" destination="AYe-3a-rgX" id="2QW-S0-0Ta"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="362"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="visa_logo" width="106" height="35"/>
+    </resources>
+</document>

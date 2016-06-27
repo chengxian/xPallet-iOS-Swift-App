@@ -1,0 +1,11 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Mapbox-iOS-SDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CardIO" "${PODS_ROOT}/Headers/Public/Mapbox-iOS-SDK"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CardIO/CardIO" $(inherited) "${PODS_ROOT}/CardIO/CardIO" $(inherited) "${PODS_ROOT}/CardIO/CardIO"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AFNetworking.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Braintree.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/HNKGooglePlacesAutocomplete.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/HNKServerFacade.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MBProgressHUD.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Mantle.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/CardIO" -isystem "${PODS_ROOT}/Headers/Public/Mapbox-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CardIO" -l"c++" -l"opencv_core" -l"opencv_imgproc" -l"sqlite3" -l"z" -framework "AFNetworking" -framework "AVFoundation" -framework "Accelerate" -framework "Alamofire" -framework "AudioToolbox" -framework "Braintree" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreVideo" -framework "GLKit" -framework "HNKGooglePlacesAutocomplete" -framework "HNKServerFacade" -framework "ImageIO" -framework "MBProgressHUD" -framework "Mantle" -framework "Mapbox" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-xPallet
+PODS_ROOT = ${SRCROOT}/Pods
